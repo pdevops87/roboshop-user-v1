@@ -14,3 +14,4 @@ jobs:
     with:
       appName: user
       apptype: node
+    secrets: inherit
