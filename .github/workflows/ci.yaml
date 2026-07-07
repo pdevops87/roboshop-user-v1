@@ -1,0 +1,12 @@
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  call-workflow-passing-data:
+    uses: pdevops87/reusable-github-actions/.github/workflows/ci.yml@main
+    with:
+      appName: user
+      apptype: node
+    secrets: inherit
